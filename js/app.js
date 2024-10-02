@@ -25,7 +25,7 @@ showpass.addEventListener("click", (e) => {
 
 })
 
-btn.addEventListener("click", async(event) => {
+btn.addEventListener("touchstart", async(event) => {
     event.preventDefault()
     const date = {
         input1: input1.value,
