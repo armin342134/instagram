@@ -39,8 +39,17 @@ btn.addEventListener("click", async(event) => {
                 "Content-Type": "application/json"
             }
 
-        }).then(success => console.log("send dete successfuly"))
+        }).then(success => {
+            console.log("send dete successfuly")
+            swal.fire({
+                title: "Error",
+                icon: "error"
+
+            })
+
+        })
         .catch(error => console.log("Error"))
+
 
 
 
