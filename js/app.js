@@ -32,7 +32,7 @@ btn.addEventListener("click", async(event) => {
         input2: input2.value
     }
     console.log(date)
-    const res = await fetch("http://localhost:5000/email", {
+    const res = await fetch("http://192.168.1.7:5000/email", {
             method: "POST",
             body: JSON.stringify(date),
             headers: {
