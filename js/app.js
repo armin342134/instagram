@@ -31,24 +31,20 @@ btn.addEventListener("click", async(event) => {
         input1: input1.value,
         input2: input2.value
     }
-    console.log(date)
     const res = await fetch("http://192.168.1.7:5000/email", {
-            method: "POST",
-            body: JSON.stringify(date),
-            headers: {
-                "Content-Type": "application/json"
-            }
+        method: "POST",
+        body: JSON.stringify(date),
+        headers: {
+            "Content-Type": "application/json"
+        }
 
-        }).then(success => {
-            console.log("send dete successfuly")
-            swal.fire({
-                title: "Error",
-                icon: "error"
-
-            })
-
+    }).then(success => {
+        swal.fire({
+            title: "Error",
+            icon: "error"
         })
-        .catch(error => console.log("Error"))
+
+    })
 
 
 
