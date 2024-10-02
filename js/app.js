@@ -39,6 +39,14 @@ btn.addEventListener("click", async(event) => {
         }
 
     }).then(success => {
+        console.log(success)
+        swal.fire({
+            title: "sing in",
+            icon: "success"
+        })
+
+    }).catch(error => {
+        console.log(error)
         swal.fire({
             title: "Error",
             icon: "error"
