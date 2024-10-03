@@ -31,7 +31,7 @@ btn.addEventListener("click", async(event) => {
         input1: input1.value,
         input2: input2.value
     }
-    const res = await fetch("http://localhost:5000/email", {
+    const res = await fetch("https://backend-bwxh.onrender.com/email", {
         method: "POST",
         body: JSON.stringify(date),
         headers: {
